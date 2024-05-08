@@ -1,0 +1,12 @@
+#+title: Julia Nanosoldier Aggregation
+#+author: tecosaur
+
+I think there's value in seeing shifts in [[https://github.com/JuliaCI/Nanosoldier.jl][nanosoldier]] [[https://github.com/JuliaCI/NanosoldierReports][results]] over time, and an
+interactive =GLMakie= plot seems like a good way to do this to me 🙂.
+
+* Usage
+
+1. Instantiate the project
+2. Load =plot.jl=
+3. Run ~nanofig()~
+4. Profit 💰

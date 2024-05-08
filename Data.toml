@@ -1,0 +1,20 @@
+data_config_version = 0
+uuid = "499e3769-d786-499d-8a4f-335fb3f63256"
+name = "julia-nanosoldier-aggregation"
+plugins = ["store", "defaults", "memorise"]
+
+[config.defaults.storage._]
+checksum = "auto"
+
+[[nanosoldier-collation]]
+uuid = "dde97f00-7cf5-4c42-9c42-6b4be929b85f"
+description = "An aggregation of nanosoldier data performed by Cameron Pfiffer in April 2024"
+
+    [[nanosoldier-collation.storage]]
+    driver = "web"
+    checksum = "k12:113e6d8e63ff55a0e487662a8951ebc8"
+    url = "https://0x0.st/XHbB.zst" # This should be hosted till the end of 2024
+
+    [[nanosoldier-collation.loader]]
+    driver = "chain"
+    loaders = ["zstd", "arrow"]
